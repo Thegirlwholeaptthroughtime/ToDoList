@@ -12,22 +12,39 @@
 
 <body>
 
-    <h2 id="clock"></h2>
-    <h1 id="greeting" class="hidden"></h1>
+
+    <header>
+       
+        <h1 id="greeting" class="hidden"></h1>
+        <h2 id="clock"></h2>
+    </header>
+
+    <form action="" id="todo-form">
+        <input required type="text" placeholder="Wrtie a To Do and Press Enter">
+    </form>
+    <ul id="todo-list"></ul>
+
     <form id="login-form" class="hidden ">
-        <input 
-            required 
-            maxlength="15"
-            type="text" 
-            placeholder="What is your name?" />
+        <input required maxlength="15" type="text" placeholder="What is your name?" />
         <input type="submit" value="Log In" />
     </form>
 
 
 
+    <div id="bgContainer"></div>
 
-    <script src="clock.js"></script>
-    <script src="greetings.js"></script>
+    <div id="quote">
+        <div class="quote"></div>
+        <div class="author"></div>
+    </div>
+
+
+
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/background.js"></script>
 </body>
 
 </html>
